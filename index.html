@@ -276,6 +276,26 @@
                 background-color:#90ee90;
                 margin:2px;
             }
+            #boxsize1{
+                border:10px solid #008000;
+                /* padding:40px;*/
+                margin:40px; 
+            }
+            #boxsize1>p{
+                border:7px solid #ffa500;
+                width:100%;
+                box-sizing:content-box;
+            }
+            #boxsize2{
+                border:10px solid #ffa500;
+                margin:40px;
+            }
+            #boxsize2>p{
+                border:7px solid #ee82ee;
+                width:100%;
+                box-sizing:border-box;
+            }
+
         </style>
     </head>
     <body>
@@ -398,8 +418,14 @@
             </p>
             <p id="bdrclp2">It is important to clarify what it means to be the larger number.If a margin of 70px collides with a margin of 90px, the 90px margin will win. If a margin of -70px collides with a margin of -90px, -90px will win.</p>
         </div>
-        <div id="boxing">
-            
+        <div id="boxsize1">
+            <p>here content-sizing property is applied.</p>
+            <p >The "box-sizing:box-sizing;" CSS property sets how the total width and height of an element is calculated.</p>
         </div>
+        <div id="boxsize2">
+            <p>here "box-sizing:border-box;" property is applied.</p>
+            <p >The box-sizing CSS property sets how the total width and height of an element is calculated.</p>
+        </div>
+        
     </body>
 </html>
