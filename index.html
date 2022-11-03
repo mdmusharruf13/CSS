@@ -295,7 +295,52 @@
                 width:100%;
                 box-sizing:border-box;
             }
-
+            #disp-a{
+                margin:5px;
+                border:3px solid #ffa500;
+            }
+            #disp1{
+                background-color:#90ee90 ;
+                height:100px;
+                width:40vw;
+            }
+            #disp2{
+                background-color: #ee82ee;
+                height:100px;
+                width:40vw;
+            }
+            #disp-i{
+                margin:5px;
+                padding:5px;
+                border:3px solid #ff00ff;
+            }
+            #disp3{
+                background-color:#00ff00;
+                margin-top:5px;
+                margin-right:5px;
+                display:inline;
+            }
+            #disp4{
+                background-color:#90ee90;
+                padding: 5px;
+                display:inline;
+            }
+           #disp-ib{
+            border:3px solid #ff4500;
+            margin:3px;
+            padding:5px;
+           } 
+           #disp5{
+            background-color: #ee82ee;
+            display:inline-block;
+            margin:5px;
+           }
+           #disp6{
+            background-color: #ff00ff;
+            display: inline-block;
+            height:30px;
+            width:190px;
+           }
         </style>
     </head>
     <body>
@@ -426,6 +471,32 @@
             <p>here "box-sizing:border-box;" property is applied.</p>
             <p >The box-sizing CSS property sets how the total width and height of an element is calculated.</p>
         </div>
-        
+        <div id="disp-a">
+            <p>Demo of block display</p>
+            <div id="disp1">
+                Displays an element as an inline element (like span). Any height and width properties will have no effect
+            </div>
+            <div id="disp2">
+                Displays an element as a block element (like p). It starts on a new line, and takes up the whole width
+            </div>
+        </div>
+        <div id="disp-i">
+            <p>Demo of inline display.</p>
+            <div id="disp3">
+                In "display:inline" margin-top and margin bottom do not works.
+            </div>
+            <div id="disp4">
+                Displays inline
+            </div>
+        </div>
+        <div id="disp-ib">
+            <p>Demo of inline-block display.</p>
+            <div id="disp5">
+                In "display:inline-block" all margin and padding is allowed.
+            </div>
+            <div id="disp6">
+                Displays inline-block.
+            </div>
+        </div>
     </body>
 </html>
