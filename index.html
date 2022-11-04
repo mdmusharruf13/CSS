@@ -3,6 +3,10 @@
         <title>CSS</title>
         <link rel="stylesheet" href="/style.css">
         <style>
+            /* *{
+                margin: 0;
+                padding: 0;
+            } */
             #internal{
                 color:orange;
                 font-size:20px;
@@ -341,6 +345,37 @@
             height:30px;
             width:190px;
            }
+           .nav{
+            background-color:#000000;
+           }
+           .nav ul li{
+               list-style-type:none;
+               display:inline-block;
+               height:30px;
+               padding:5px;
+           }
+           .nav ul li a{
+            color:#ffffff;
+            text-decoration:none;
+            font-size:25px;
+           }
+           .left{
+            background-color:#008200;
+            height:50px;
+            width:50%;
+            display:inline;
+            display:inline-block;
+        }
+        .right{
+            background-color:#00ff00;
+            height:50px;
+            width:50%;
+            display:inline-block;
+        }
+        .foot p{
+            text-align:center;
+            background-color:#90ee90;
+        }
         </style>
     </head>
     <body>
@@ -497,6 +532,17 @@
             <div id="disp6">
                 Displays inline-block.
             </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div>
+        <div class="left"></div><div class="right"></div>
+        <div class="foot">
+            <p>copyright &copy; All Rights Reserved</p>
         </div>
     </body>
 </html>
