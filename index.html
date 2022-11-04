@@ -408,6 +408,121 @@
             min-height:15vh;
             height:5px;
         }
+        #p-matter{
+            border:2px solid #87ceeb;
+            margin:5px 0;
+        }
+        #p-matter p{
+            font-weight: bold;
+            text-transform:capitalize;
+        }
+        .positioning0{
+            background-color:#ff4500;
+            height:100px;
+            padding:5px;
+        }.positioning0 span{
+            background-color: black;
+            color:#ffffff;
+            border:1px solid #000000;
+            border-radius:9px;
+            position: relative;
+            right:40px;
+            top:1.7px;
+        }
+        .position1{
+            border:5px solid #87ceeb;
+            border-radius:5px;
+            margin:5px 0;
+        }
+        .position1 header{
+            background-color:#90ee90;
+        }
+        .position1 ul li{
+            list-style-type: none;
+            display:inline-block;
+            padding:5px;
+        }
+        .position1 .p1{
+            background-color:#ee82ee;
+            height:50vh;
+            width:50vw;
+            margin:auto;
+        }
+        .position1 #para{
+            border:7px solid #ffa500;
+        }
+        .position1 #box{
+            background-color:#90ee90;
+            height:120px;
+            width:120px;
+            position:relative;
+            top:10%;
+            left:140px;
+        }
+        .position1 #box1{
+            background-color:#90ee90;
+            height:120px;
+            width:120px;
+            position:relative;
+        }
+        #position2{
+            border:3px solid #f00;
+            height:50vh;
+            width:50vw;
+        }
+        #position2 #box1{
+            width:170px;
+            height:150px;
+            background-color:#87ceeb;
+        }
+        #position2 #box2{
+            width:150px;
+            height:150px;
+            background-color:#90ee90;
+            position: relative;
+            bottom:50px;
+            left:8px;
+            /* right:0; */
+        }
+        #position3{
+            width:50vw;
+            height:50vh;
+            border:3px solid #00f;
+            margin:5px 0;
+            /* position: absolute; */
+            position:relative;
+        }
+        #position3 #box1{
+            background-color:#f0f;
+            width:150px;
+            height:150px;
+            /* position:relative; */
+            position: absolute;
+            /* left:0; */
+            right:0;
+            top:25px;
+        }
+        #position3 #box2{
+            background-color:#ff0;
+            height:150px;
+            width:150px;
+        }
+        #position4{
+            background-color:#90ee90;
+            width:fit-content;
+            padding:10px;
+            border:2px solid #90ee90;
+            border-radius:10px;
+            font-weight:bold;
+            text-transform:capitalize;
+            /* position:absolute; */
+            position:fixed;
+            /* position:relative; */
+            /* position:sticky; */
+            right:0;
+            bottom:0;
+        }
+        
         </style>
     </head>
     <body>
@@ -591,6 +706,44 @@
                 <b>min-height:15vh; height:5px;</b><br>
                 here the height is 5px and min-height is 15vh which is more than the 5px.so min-height has more priority so its height is applied.
             </div>
+        </div>
+        <div id="p-matter">
+            <p> <u>static : </u> the default position. top/bottom/left/right/z-index has no effect.</p>
+            <p> <u>relative : </u> the top/bottom/left/right/z-index will now work otherwise the element is in the flow of document like static.</p>
+            <p><u>absolute : </u> the element is removed from the flow and is relatively positioned to its first non-stack ancestors top/bottom etc.</p>
+        </div>
+        <div class="positioning0">
+            <p>this is the example of position relative ; if we set the attribute position:relative we can set the values of top,left,bottom and right.</p>
+            Name : <input type="text" id="ip">
+            <span>valid</span>
+        </div>
+        <div class="position1">
+            <header>
+                <nav>
+                    <ul id="ull">
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>About</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="p1">
+                <p id="para">The CSS position property is used to set position for an element. it is also used to place an element behind another and also useful for scripted animation effect.You can position an element using the top, bottom, left and right properties. These properties can be used only after position property is set first. A position element's computed position property is relative, absolute, fixed or sticky.</p>
+                <p id="box">i am a box with position:relative; top:10%; left:140px;</p>
+            </div>
+        </div>
+        <div id="position2">
+            <p>here position relative is demonstrated</p>
+            <p id="box1">i am a box1 with position:relative </p>
+            <p id="box2">i am a box2 with position:relative </p>
+        </div>
+        <div id="position3">
+            <p>here position absolute is demonstrated. Here the absolute position does not stay in the flow </p>
+            <p id="box1">i am a box1 with position:static </p>
+            <p id="box2">i am a box2 with position:absolute </p>
+        </div>
+        <div id="position4">
+            this is position fixed <a href="https://web.whatsapp.com/"  target="_blank">open whatsapp</a>
         </div>
     </body>
 </html>
