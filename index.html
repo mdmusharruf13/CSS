@@ -391,6 +391,23 @@
             font-weight:bold;
             text-transform:capitalize;
         }
+        .minmax{
+            border:2px solid #ff00ff;
+            /* max-height: 50vh;
+            min-height: 25vh; */
+            height:fit-content;
+            margin:5px 0;
+        }
+        .mma{
+            background-color:#ffa500;
+            max-height: 8vh;
+            height:70px;
+        }
+        .mmb{
+            background-color: #ee82ee;
+            min-height:15vh;
+            height:5px;
+        }
         </style>
     </head>
     <body>
@@ -563,6 +580,17 @@
             <center>here "em" unit is used</center>
             <p id="up1">Every property used in CSS has a value type defining the set of values that are allowed for that property. Taking a look at any property page on MDN will help you understand the values associated with a value type that are valid for any particular property.</p>
             <p> In this lesson we will take a look at some of the most frequently used value types, and their most common values and units.</p>
+        </div>
+        <div class="minmax">
+            <div class="mma">
+                <b>max-height:8vh; height:70px;</b><br>
+                here the priority of the max height is more so the height is 8vh but not 70pxm which is more than 5vh.
+                so max-height has more priority so its height is applied.
+            </div>
+            <div class="mmb">
+                <b>min-height:15vh; height:5px;</b><br>
+                here the height is 5px and min-height is 15vh which is more than the 5px.so min-height has more priority so its height is applied.
+            </div>
         </div>
     </body>
 </html>
