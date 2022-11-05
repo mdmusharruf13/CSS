@@ -522,7 +522,142 @@
             right:0;
             bottom:0;
         }
-        
+        /* #l-bg{
+            list-style-type: none;
+            list-style-image: url('/gradient-bg-colour.jpeg');
+            /* line-height: 10px; */
+            /* list-style-position: inside; */
+            /* list-style-position:outside; */
+        /* } */ 
+        #f-b{
+            border:5px solid #f00;
+            height:56.5vh;
+            width: fit-content;
+        }
+        .same-f{
+            border:5px solid #90ee90;
+            height:200px;
+            width:30vw;
+            float:left;
+        }
+        #flt>#f1{
+            background-color:#ff0;
+            width:70px;
+            height:70px;
+            float:right;
+            /* padding:5px; */
+        }
+        #flt>#f2{
+            background-color:#00ff00;;
+            width:70px;
+            height:70px;
+            float:right;
+            /* padding:5px; */
+        }
+        #flt2>#f1{
+            background-color:#ff0;
+            width:70px;
+            height:70px;
+            /* float:right; */
+            float:left;
+            /* padding:5px; */
+        }
+        #flt2>#f2{
+            background-color:#00ff00;;
+            width:70px;
+            height:70px;
+            float:right;
+            /* padding:5px; */
+        }
+        #flt3>#f1{
+            background-color:#6495ed;
+            width:70px;
+            height:70px;
+            float:none;
+        }
+        #flt3>#f2{
+            background-color:#ccf;
+            width:70px;
+            height:70px;
+            float:right;
+        }
+        #flt4>#f1{
+            background-color:#ccf;
+            width:70px;
+            height:70px;
+            float:left;
+        }
+        #flt4>#f2{
+            background-color:#6495ed;
+            width:70px;
+            height:70px;
+            float:left;
+        }
+        #flt5>#f1{
+            background-color:#ccf;
+            width:70px;
+            height:70px;
+            float:right;
+        }
+        #flt5>#f2{
+            background-color:#6495ed;
+            width:70px;
+            height:70px;
+            float:left;
+        }
+        #flt6>#f1{
+            background-color:#80ee80;
+            width:70px;
+            height:70px;
+            float:right;
+        }
+        #flt6>#f2{
+            background-color:#ee82ee;
+            width:70px;
+            height:70px;
+            float:none;
+        }
+        #c-b1{
+            border:5px solid #f0f;
+            height:30vh;
+            width:fit-content;
+        }
+        #c-b1>#c-img{
+            height:20vh;
+            float:left;
+        }
+        #c-b1>#c-p1{
+            /* clear:right; */
+            clear:none;
+        }
+        #c-b2{
+            border:5px solid #00f;
+            height:40vh;
+            width:fit-content;
+        }
+        #c-b2>#c-img{
+            height:20vh;
+            float:left;
+        }
+        #c-b2>#c-p2{
+            clear:left;
+        }
+        #clr3{
+            border:5px solid #ffaa90;
+            height:20vh;
+        }
+        #clr3>#b1{
+            height:70px;
+            width:70px;
+            background-color: #87ceeb;
+            float:left;
+        }
+        #clr3>#b2{
+            height:70px;
+            width:70px;
+            background-color: #90ee90;
+            float:right;
+        }
         </style>
     </head>
     <body>
@@ -744,6 +879,63 @@
         </div>
         <div id="position4">
             this is position fixed <a href="https://web.whatsapp.com/"  target="_blank">open whatsapp</a>
+        </div>
+        <!-- <ul id="l-bg">
+            <li>Mohammad</li>
+            <li>Musharruf</li>
+            <li>Nawaz</li>
+        </ul> -->
+        <div id="f-b">
+            <div class="same-f" id="flt">
+                <p>here float property is demonstrated</p>
+                <div id="f1">1. float:right;</div>
+                <div id="f2">2. float:right;</div>
+            </div>
+            <div class="same-f" id="flt2">
+                <p>here float property is demonstrated</p>
+                <div id="f1">1. float:left;</div>
+                <div id="f2">2. float:right;</div>
+            </div>
+            <div class="same-f" id="flt3">
+                <p>here float property is demonstrated</p>
+                <div id="f1">1. float:none;</div>
+                <div id="f2">2. float:right;</div>
+            </div>
+            <div class="same-f" id="flt4">
+                <p>here float property is demonstrated</p>
+                <div id="f1">1. float:left;</div>
+                <div id="f2">2. float:left;</div>
+            </div>
+            <div class="same-f" id="flt5">
+                <p>here float property is demonstrated</p>
+                <div id="f1">1. float:right;</div>
+                <div id="f2">2. float:left;</div>
+            </div>
+            <div class="same-f" id="flt6">
+                <p>here float property is demonstrated</p>
+                <div id="f1">1. float:right;</div>
+                <div id="f2">2. float:none;</div>
+            </div>
+        </div>
+        <div id="c-b1">
+            <p>here image property is set to float:left paragraph property is set to clear:none</p>
+            <img src="/bg-image.png"  id="c-img" alt="bg-image">
+            <p id="c-p1">none:Is a keyword indicating that the element is not  moved down to clear past floating elements.
+                left:Is a keyword indicating that the element is moved down to clear past left floats.
+                right:Is a keyword indicating that the element is moved down to clear past right floats.
+                both:Is a keyword indicating that the element is moved down to clear past both left and right floats.</p>
+        </div>
+        <div id="c-b2">
+            <p>here image has float left property and and paragraph property is set to clear:left</p>
+            <img src="/bg-image.png"  id="c-img" alt="bg-image">
+            <p id="c-p2">
+                inline-start:Is a keyword indicating that the element is moved down to clear floats on start side of its containing block, that is the left floats on ltr scripts and the right floats on rtl scripts.
+                inline-end:Is a keyword indicating that the element is moved down to clear floats on end side of its containing block, that is the right floats on ltr scripts and the left floats on rtl scripts.</p>
+        </div>
+        <div id="clr3">
+            <div id="b1">This is block-1</div>
+            <div id="b2">This is block-2</div>
+            <p>In this div i have created two sub div with same height and width and with different background-color.first div have float property left and second div have float property right.after this two div i have written one para which is printed in between these two div.</p>
         </div>
     </body>
 </html>
