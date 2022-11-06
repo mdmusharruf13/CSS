@@ -1103,6 +1103,66 @@
             grid-column:span 4;
             background-color: greenyellow;
         }
+        #main-media{
+            border:5px solid red;
+            /* width:700px; */
+            margin:5px 0;
+            padding: 5px;
+            display:grid;
+            grid-row-gap:3px;
+        }
+        #main-media>.mbox{
+            background-color: lightgreen;
+            border:2px solid black;
+            text-align: center;
+            font-size:50px;
+            /* display:none; */
+        }
+        @media (max-width:560px){
+            #main-media>#media1{
+                display:block;
+                background-color: orange;
+                color:white;
+                font-size:5vh;
+            }
+            #main-media>.mbox{
+                display:none
+            }
+        }
+        @media (max-width:610px){
+            #main-media>#media2{
+                display:block;
+                background-color: dodgerblue ;
+                color:white;
+                font-size:5vh;
+            }
+            #main-media>.mbox{
+                display:none;
+            }
+        }
+        @media (max-width:660px){
+            #main-media>#media3{
+                display:block;
+                background-color:darkorchid ;
+                color:white;
+                font-size:5vh;
+            }
+            #main-media>.mbox{
+                display:none;
+            }
+        }
+        @media (max-width:710px){
+            #main-media>#media4{
+                display:block;
+                background-color: blue ;
+                color:white;
+                font-size:5vh;
+            }
+            #main-media>.mbox{
+                display:none;
+            }
+        }
+        
         </style>
     </head>
     <body>
@@ -1637,5 +1697,12 @@
             <div class="item" id="three">three</div>
             <div class="item" id="four">four</div>
         </div>
+        <div id="main-media">
+            <div id="media1" class="mbox">I am mobile</div>
+            <div id="media2" class="mbox">I am tablet</div>
+            <div id="media3" class="mbox">I am laptop</div>
+            <div id="media4" class="mbox">I am computer</div>
+        </div>
+        
     </body>
 </html>
