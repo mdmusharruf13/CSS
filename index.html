@@ -1162,7 +1162,400 @@
                 display:none;
             }
         }
-        
+        #trans1{
+            background-color:lightblue;
+            border:2px solid black;
+            height:100px;
+        }
+        #trans1>#t1{
+            border:1px solid red;
+            /* transform: translate(20px, 10px); */
+            transform:translate(10px,10px);
+        }
+        #trans2{
+            background-color:pink;
+            border:2px solid blue;
+            height:25vh;
+            display:flex;
+        }
+        #trans2>#t1{
+            border:3px solid red;
+            width:100px;
+            height:100px;
+            background-color:black;
+            color: white;
+            float:left;
+        }
+        #trans2>#t2{
+            border:3px solid red;
+            transform:rotate(0.25turn);
+            /* width:fit-content; */
+            width:100px;
+            height:100px;
+            background-color:black;
+            color: white;
+        }
+        #trans3{
+            border:2px solid black;
+            background-color:orange;
+            height:210px;
+            /* display:flex; */
+        }
+        #trans3>#t1{
+            border:3px solid yellow;
+            margin:5px;
+            transform:rotate(180deg);
+        }
+        #trans3>#t2{
+            height:100px;
+            width:100px;
+            background-color:dodgerblue;
+            border:2px solid black;
+            transform:rotate(45deg);
+        }
+        #trans4{
+            border:2px solid black;
+            background-color:yellow;
+            display:flex;
+            height:20vh;
+            align-items: center;
+            justify-content:space-evenly;
+        }
+        #trans4>#t1{
+            height:25px;
+            width:50px;
+            border:3px solid red;
+            margin:5px;
+            transform:rotate(45deg);
+            transform-origin:center;
+        }
+        #trans4>#t2{
+            height:25px;
+            width:50px;
+            border:3px solid red;
+            margin:5px;
+            transform:rotate(45deg);
+            transform-origin:top;
+        }
+        #trans4>#t3{
+            height:25px;
+            width:50px;
+            border:3px solid red;
+            margin:5px;
+            transform: rotate(45deg);
+            transform-origin:right;
+        }
+        #trans4>#t4{
+            border:3px solid red;
+            height:25px;
+            width:50px;
+            transform:rotate(45deg);
+            transform-origin:bottom;
+        }
+        #trans4>#t5{
+            border:3px solid red;
+            height:25px;
+            width:50px;
+            transform:rotate(45deg);
+            transform-origin:left;
+        }
+        #trans5{
+            border:3px solid red;
+            background-color:lightgreen;
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+            height:20vh;
+        }
+        #trans5>#t1{
+            border:3px solid black;
+            width:50px;
+            text-align: center;
+            transform:rotate(-45deg);
+            transform-origin:center ;
+        }
+        #trans5>#t2{
+            border:3px solid black;
+            width:50px;
+            text-align: center;
+            transform:rotate(-45deg);
+            transform-origin: top;
+        }
+        #trans5>#t3{
+            border:3px solid black;
+            width:50px;
+            text-align: center;
+            transform:rotate(-45deg);
+            transform-origin: right;
+        }
+        #trans5>#t4{
+            border:3px solid black;
+            width:50px;
+            text-align: center;
+            transform:rotate(-45deg);
+            transform-origin: bottom;
+        }
+        #trans5>#t5{
+            border:3px solid black;
+            width:50px;
+            text-align: center;
+            transform:rotate(-45deg);
+            transform-origin: left;
+        }
+        #trans6{
+            background-color:skyblue;
+            border:3px solid black;
+            height:15vh;
+            display:flex;
+            flex-direction:column;
+        }
+        #trans6>#t1{
+            border:3px solid red;
+            background-color:black;
+            color:white;
+            transform:scaleX(2);
+            width:fit-content;
+            margin:10px;
+        }
+        #trans6>#t2{
+            border:3px solid black;
+            background-color:yellow;
+            transform:scaleY(2);
+            margin:10px;
+        }
+        #trans7{
+            border:3px solid black;
+            background-color: purple;
+            height:15vh;
+            display:flex;
+            flex-direction: column;
+        }
+        #trans7>#t1{
+            border:3px solid red;
+            background-color:lightyellow;
+            font-weight:bold;
+            transform:skewX(-30deg);
+            width:fit-content;
+            margin:10px;
+        }
+        #trans7>#t2{
+            border:3px solid red;
+            background-color:black;
+            color:white;
+            transform:skewX(30deg);
+            width:fit-content;
+            margin:10px;
+        }
+        #trans8{
+            border:3px solid black;
+            background-color: green;
+            height:20vh;
+            display:flex;
+            flex-direction: row;
+
+        }
+        #trans8>#t1{
+            border:3px solid red;
+            background-color:lightyellow;
+            font-weight:bold;
+            transform:skewY(-30deg);
+            width:fit-content;
+            margin:60px;
+            height:20px;
+        }
+        #trans8>#t2{
+            border:3px solid red;
+            background-color:white;
+            transform:skewY(30deg);
+            width:fit-content;
+            margin:60px;
+            height:20px;
+        }
+        #trans9{
+            border:5px solid orangered;
+            margin:5px 0;
+            background-color:yellow;
+            display:flex;
+            justify-content:space-evenly;
+        }
+        #trans9>.all-div{
+            border:3px solid black;
+            height:150px;
+            width:150px;
+            /* margin:auto; */
+        }
+        #trans9>.all-div>img{
+            height:150px;
+            width:150px;
+        }
+        #trans9>#t1>img{
+            transform:rotateX(0deg);
+        }
+        #trans9>#t2>img{
+            transform:rotateY(45deg);
+        }
+        #trans9>#t3>img{
+            transform:rotateZ(45deg);
+        }
+        #trans10{
+            border:5px solid red;
+            display:flex;
+            justify-content:space-evenly;
+            background-color:lightgreen;
+        }
+        #trans10>.all-div{
+            border:3px solid black;
+            height:fit-content;
+            margin:5px 0;
+            width:fit-content;
+        }
+        #trans10>.all-div>img{
+            height:100px;
+        }
+        #trans10>#t1>img{
+            transform: scaleX(1.2);
+        }
+        #trans10>#t2>img{
+            transform: scaleY(1.2);
+        }
+        #trans10>#t3>img{
+            transform: scaleZ(50);
+        }
+        #example1{
+            border:5px solid blue;
+            background-color:lightskyblue;
+            display:flex;
+        }
+        #example1>div{
+            border:3px solid orange;
+            margin:50px auto;
+        }
+        #example1>div>img{
+            height:150px;
+            margin: auto;
+        }
+        #example1>div>img:hover{
+            height:150px;
+            margin: auto;
+            transform:rotate(5deg) scale3d(1.2,1.3,2) skewX(10deg);
+        }
+        #transi1{
+            border:5px solid black;
+            background-color:darkgoldenrod;
+        }
+        #transi1>#t1{
+            border:3px solid red;
+            height:300px;
+            width:500px;
+            margin:20px auto;
+        }
+        #transi1>#t1>img{
+            height:300px;
+            width:500px;
+            transition-property:all;
+            transition-duration:2s;
+            transition-timing-function: ease-in;
+        }
+        #transi1>#t1>img:hover{
+            height:200px;
+            width:400px;
+        }
+        #example2{
+            border:5px solid orange;
+            background-color:skyblue;
+        }
+        #example2>ul{
+            list-style-type:none;
+            display:flex;
+        }
+        #example2>ul>li{
+            border:2px solid violet;
+            padding:5px;
+            margin:10px;
+            background-color:violet;
+            border-radius:7px;
+            transition-property:all;
+            transition-duration: 0.3s;
+            transition-timing-function:ease;
+        }
+        #example2>ul>li:hover{
+            transform:scale3d(1.5,1.5,2);
+        }
+        #anim1{
+            border:5px solid red;
+            background-color:lightgreen;
+            height:5vh;
+        }
+        #anim1>#a1{
+            background-color:black;
+            border:3px solid white;
+            height:2vh;
+            margin-top:7px;
+            width:0%;
+            animation-name: loader;
+            animation-duration:2s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count:2;
+            animation-direction:alternate;
+        }
+        @keyframes loader{
+            from{
+                width:0vw;
+            }
+            to{
+                width:99%;
+            }
+        }
+        #anim2{
+            border:5px solid blue;
+            background-color:orange;
+            height:50vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #anim2>img{
+            width:400px;
+            height:200px;
+            transition-property:all ;
+            transition-duration:1.5s;
+            transition-timing-function:ease-in-out;
+        }
+        #anim2>img:hover{
+            transform:rotate(360deg);
+        }
+        #anim3{
+            border:5px solid violet;
+            background-color:skyblue;
+            display:flex;
+            justify-content:center;
+            height:400px;
+            align-items:center;
+        }
+        #anim3>img{
+            border:2px solid red;
+            border-radius:200px;
+        }
+        #anim3>img:hover{
+            animation-name:rotating;
+            animation-timing-function:linear;
+            animation-duration:1s; 
+            animation-iteration-count:infinite; 
+        }
+        /* #anim3>img:hover{
+            transition-property:all ;
+            transition-duration:1.5s;
+            transition-timing-function:ease-in-out;
+            transform:rotate(360deg);
+        } */
+        @keyframes rotating {
+            from{
+                transform:rotate(0deg);
+            }
+            to{
+                transform:rotate(360deg);
+            }
+        }
         </style>
     </head>
     <body>
@@ -1703,6 +2096,90 @@
             <div id="media3" class="mbox">I am laptop</div>
             <div id="media4" class="mbox">I am computer</div>
         </div>
-        
+        <p>these are 2d transform methods</p>
+        <div id="trans1">
+            <p>translate(): Moves an element sideways or up and down.</p>
+            <div id="t1">here transform:translate(x value, y value in pixels)</div>
+        </div>
+        <div id="trans2">
+            <p>rotate(): Rotates the element clockwise from its current position. <br>here i have rotated the line 45 degree</p>
+            <div id="t1">box1</div>
+            <div id="t2">box2</div>
+        </div>
+        <div id="trans3">
+            <p>rotate(): Rotates the element clockwise from its current position.</p>
+            <div id="t1">here i have rotated the line 90 degrees</div>
+            <div id="t2">45deg rotate</div>
+        </div>
+        <p>here transform-origin:center/top/right/bottom/left each box but all the rotations is in positive</p>
+        <div id="trans4">
+            <div id="t1">center</div>
+            <div id="t2">top</div>
+            <div id="t3">right</div>
+            <div id="t4">bottom</div>
+            <div id="t5">left</div>
+        </div>
+        <p>here transform-origin:center/top/right/bottom/left each box but all the rotations is in negative</p>
+        <div id="trans5">
+            <div id="t1">center</div>
+            <div id="t2">top</div>
+            <div id="t3">right</div>
+            <div id="t4">bottom</div>
+            <div id="t5">left</div>
+        </div>
+        <p>scale(): Affects the size of the element. This also applies to the font-size, padding, height, and width of an element, too. It’s also a a shorthand function for the scaleX and scaleY functions.</p>
+        <div id="trans6">
+            <div id="t1">scaleX and scaleY is applied to this line</div>
+            <div id="t2">scaleX and scaleY is applied to this line</div>
+        </div>
+        <p>skewX() and skewY(): Tilts an element to the left or right, like turning a rectangle into a parallelogram. skew() is a shorthand that combines skewX() and skewY by accepting both values.</p>
+        <div id="trans7">
+            <div id="t1">In this line skewX is -30degree</div>
+            <div id="t2">In this line skewX is 30degree</div>
+        </div>
+        <div id="trans8">
+            <div id="t1">In this line skewY is -30degree</div>
+            <div id="t2">In this line skewY is 30degree</div>
+        </div>
+        <p>here rotateX, rotateY and rotateZ is implemented in each div sequencely.</p>
+        <div id="trans9">
+            <div id="t1" class="all-div"><img src="/ios15.jpg" alt="IOS image"></div>
+            <div id="t2" class="all-div"><img src="/ios15.jpg" alt="IOS image"></div>
+            <div id="t3" class="all-div"><img src="/ios15.jpg" alt="IOS image"></div>
+        </div>
+        <p>here the scaleX, scaleY and scaleZ transform is implemented</p>
+        <div id="trans10">
+            <div id="t1" class="all-div"><img src="/bg-image.png" alt="IOS image"></div>
+            <div id="t2" class="all-div"><img src="/bg-image.png" alt="IOS image"></div>
+            <div id="t3" class="all-div"><img src="/bg-image.png" alt="IOS image"></div>
+        </div>
+        <p>here one example is done using transform</p>
+        <div id="example1">
+            <div><img src="/ios15.jpg" alt="an ios image"></div>
+        </div>
+        <p>hover me to see the transform</p>
+        <div id="transi1">
+            <div id="t1"><img src="/gradient-bg-colour.jpeg" alt=""></div>
+        </div>
+        <p>simple nav bar using transform and transition</p>
+        <div id="example2">
+            <ul>
+                <li>Home</li>
+                <li>Courses</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <p>this is an loader made with animations in css</p>
+        <div id="anim1">
+            <div id="a1"></div>
+        </div>
+        <p>this is rotating image </p>
+        <div id="anim2">
+            <img src="/bg-image.png" alt="css image">
+        </div>
+        <div id="anim3">
+            <img src="/round.png" alt="round-chakramimage">
+        </div>
     </body>
 </html>
